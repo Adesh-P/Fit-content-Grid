@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignning Track Grid</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 100px auto;
+            background-color: pink;
+            display: grid;
+            grid-gap: 25px;
+            grid-template-columns: fit-content(100px) fit-content(200px) 1fr;
+            grid-template-rows: repeat(2, minmax(100px, min-content));
+        }
+        .item1 {
+            background-color: aquamarine;
+        }
+        .item2 {
+            background-color: skyblue;
+        }
+        .item3 {
+            background-color: goldenrod;
+        }
+        .item4 { 
+            background-color:greenyellow;
+        }
+        .item5 { 
+            background-color:mediumseagreen;
+        }
+        .item6 { 
+            background-color:lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Box1<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit ex laboriosam corrupti, quod maxime iusto, ullam laborum officia earum debitis, tempore a praesentium commodi eius. Dolores corporis tempore iure.</p></div>
+        <div class="item2">Box2<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit ex laboriosam corrupti, quod maxime iusto, ullam laborum officia earum debitis, tempore a praesentium commodi eius. Dolores corporis tempore iure.</p></div>
+        <div class="item3">Box3<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit ex laboriosam corrupti, quod maxime iusto, ullam laborum officia earum debitis, tempore a praesentium commodi eius. Dolores corporis tempore iure.</p></div>
+        <div class="item4">Box4</div>
+        <div class="item5">Box5</div>
+        <div class="item6">Box6</div>
+    </div>
+</body>
+</html>
